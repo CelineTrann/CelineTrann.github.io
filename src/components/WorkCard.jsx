@@ -2,13 +2,13 @@ import React from "react";
 
 export default function WorkCard () {
     return (
-        <div className="container md:h-48 rounded-md flex flex-row justify-around items-center bg-pink-200">
+        <div className="container rounded-md flex flex-row justify-around items-center gap-4 bg-pink-200">
             <img 
-                src="" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s" 
                 alt="" 
-                className="hidden md:block md:w-32 md:h-32"
+                className="hidden md:block md:w-28 md:h-28"
             />
-            <div className="flex flex-col md:w-3/4">
+            <div className="flex flex-col">
                 <p>Company</p>
                 <h1>JOB TITLE</h1>
                 <div className="flex justify-around">
