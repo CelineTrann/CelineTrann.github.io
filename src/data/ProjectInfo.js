@@ -41,7 +41,7 @@ export const ProjectInfo = [{
     links: ["https://github.com/CelineTrann/ao3_stats"]
 },
 {
-    name: "Vidle",
+    name: "Vidly",
     description: "Created a MVC used to keep track of movie rentals.",
     techStack: [".NET Framework", "CSS", "HTML", "Bootstrap"],
     links: ["https://github.com/CelineTrann/Vidly"]
