@@ -6,7 +6,7 @@ import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 export default function Hero () {
     return (
-        <section className="container flex flex-col md:flex-row items-center md:justify-between gap-8 md:gap-16 py-4 md:py-16">
+        <section className="container flex flex-col md:flex-row items-center md:justify-between gap-8 py-4 md:py-8">
             <img 
                 src="" 
                 alt="Image of Celine" 
