@@ -1,14 +1,13 @@
 import React from "react";
+import TechStack from "./TechStack";
 
 export default function WorkCard ({data}) {
-    const techStack = data.techStack.map((tech, index) => 
-        <div key={index} className="text-sm inline-flex justify-center items-center px-2 py-1 rounded-md bg-sky-200 text-blue-600">
-            <p>{tech}</p>
-        </div>
+    const techStackList = data.techStack.map((tech, index) => 
+        <TechStack tech={tech} index={index} />
     );
 
     const imgAlt = () => data.company + ' Logo';
-
+    
     return (
         <div className="container rounded-md flex flex-row justify-around items-start gap-4 px-4 py-6 shadow-md">
             <img 
@@ -20,7 +19,7 @@ export default function WorkCard ({data}) {
                 <h2 className="text-sm">{data.company}</h2>
                 <h3 className="text-xl uppercase font-bold">{data.title}</h3>
                 <div className="flex flex-wrap gap-2 my-2">
-                    {techStack}
+                    { techStackList }
                 </div>
                 <p>{data.description}</p>
             </div>
