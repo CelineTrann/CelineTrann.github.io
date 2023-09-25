@@ -9,8 +9,8 @@ export default function ProjectCard ({data}) {
     return (
         <div className="container rounded-md px-4 py-6 shadow-md">
             <div className="flex flex-col">
+                <h2 className="text-xl uppercase font-bold">{data.name}</h2>
                 <div className="flex flex-wrap gap-2 my-2">
-                    <h2 className="text-xl uppercase font-bold">{data.name}</h2>
                     {techStackList}
                 </div>
                 <p>{data.description}</p>
