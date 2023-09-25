@@ -2,7 +2,9 @@ import React from "react";
 
 export default function WorkCard ({data}) {
     const techStack = data.techStack.map(tech => 
-        <div className="text-sm inline-flex justify-center items-center px-2 py-1 rounded-md bg-pink-300">{tech}</div>
+        <div className="text-sm inline-flex justify-center items-center px-2 py-1 rounded-md bg-pink-300">
+            <p>{tech}</p>
+        </div>
     );
 
     return (
@@ -13,8 +15,8 @@ export default function WorkCard ({data}) {
                 className="hidden md:block md:w-28 md:h-28 rounded-md"
             />
             <div className="flex flex-col">
-                <p className="text-sm">{data.company}</p>
-                <h1 className="text-2xl uppercase font-bold">{data.title}</h1>
+                <h2 className="text-sm">{data.company}</h2>
+                <h3 className="text-2xl uppercase font-bold">{data.title}</h3>
                 <div className="flex flex-wrap gap-2 my-2">
                     {techStack}
                 </div>

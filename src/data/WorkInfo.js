@@ -1,5 +1,4 @@
 export const workInfo = [{
-    startDate: 52022,
     company: "Alcumus",
     location: "Toronto, ON",
     title: "Full Stack Developer",
@@ -7,7 +6,6 @@ export const workInfo = [{
     techStack: [".NET MVC Framework", "Angular"]
 },
 {
-    startDate: 92021,
     company: "Paramount Commerce",
     location: "Toronto, ON",
     title: "Java Developer",

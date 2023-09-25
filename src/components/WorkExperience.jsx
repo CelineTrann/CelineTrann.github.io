@@ -5,7 +5,7 @@ import { workInfo } from "../data/WorkInfo";
 
 export default function WorkExperience () {
     const workList = workInfo.map(item =>
-        <WorkCard key={item.startDate} data={item}></WorkCard>
+        <WorkCard key={item.company} data={item}></WorkCard>
     )
 
     return (
