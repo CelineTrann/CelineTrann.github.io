@@ -6,8 +6,7 @@ import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 export default function Hero () {
     return (
-      <div className="container">
-        <div className="flex flex-col md:flex-row items-center md:justify-between gap-8 md:gap-16 py-4 md:py-16">
+        <section className="container flex flex-col md:flex-row items-center md:justify-between gap-8 md:gap-16 py-4 md:py-16">
             <img 
                 src="" 
                 alt="Image of Celine" 
@@ -19,19 +18,17 @@ export default function Hero () {
                 <p>Feel free to reach out at cyptran@uwaterloo.ca!</p>
 
                 <div id="icon-container" className="flex flex-row items-center gap-4 my-4">
-                    <a href="https://github.com/CelineTrann" target="_blank" className="hover:scale-125">
+                    <a href="https://github.com/CelineTrann" target="_blank" className="hover:scale-125 ease-in-out duration-300">
                         <FontAwesomeIcon icon={faGithub} size="2xl" />
                     </a>
-                    <a href="https://www.linkedin.com/in/celine-tran-38401b177/" target="_blank" className="hover:scale-125">
+                    <a href="https://www.linkedin.com/in/celine-tran-38401b177/" target="_blank" className="hover:scale-125 ease-in-out duration-300">
                         <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                     </a>
-                    <a href="" target="_blank" className="hover:scale-125">
+                    <a href="" target="_blank" className="hover:scale-125 ease-in-out duration-300">
                         <FontAwesomeIcon icon={faFile} size="2xl" />
                     </a>
                 </div>
             </div>
-        </div>
-
-      </div>  
+        </section>
     );
 }

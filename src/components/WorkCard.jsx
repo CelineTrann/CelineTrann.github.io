@@ -6,7 +6,7 @@ export default function WorkCard ({data}) {
     );
 
     return (
-        <div className="container rounded-md flex flex-row justify-around items-center gap-4 px-4 py-6 bg-pink-200">
+        <div className="container rounded-md flex flex-row justify-around items-start gap-4 px-4 py-6 bg-pink-200">
             <img 
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s" 
                 alt="" 
