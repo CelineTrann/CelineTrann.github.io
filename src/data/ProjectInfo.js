@@ -35,8 +35,8 @@ export const ProjectInfo = [{
     description: "Created a smart yoga mat that is able to determine the users yoga pose correctness based on hand/feet pressure and orientation. This was done to help users correct their yoga poses when doing them alone. The system uses image processing techniques to differentiate between body parts, as well as analyze the pressure data recieved from the yoga mat sensors.",
     techStack: ["Python", "OpenCV", "Raspberry Pi", "Pressure Sensors"],
     links: ["https://github.com/CelineTrann/Workout_Watcher", ], 
-    img: "src/assets/projects/workout-watcher-mat.png",
-    imgAlt: "Workout Watcher sensor yoga mat",
+    img: "src/assets/projects/workout-watcher.png",
+    imgAlt: "Workout Watcher Logo",
 },
 {
     name: "Sudoku Solver",
