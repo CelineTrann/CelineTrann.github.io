@@ -15,7 +15,7 @@ export default function NavBar () {
             </button>
             <nav className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row md:justify-end items-end md:items-center gap-4 md:gap-8 md:px-16 md:py-4 md:h-16`}>
                 <Link to={"/"} className="uppercase hover:underline">HOME</Link>
-                <Link className="uppercase hover:underline">PROJECTS</Link>
+                <Link to={"projects"} className="uppercase hover:underline">PROJECTS</Link>
                 <Link className="uppercase hover:underline">CONTACT</Link>
             </nav>
         </header>
