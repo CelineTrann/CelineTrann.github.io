@@ -1,28 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import emailjs from 'emailjs-com';
-import process from "process";
 
 import NavBar from '../components/NavBar'
 
 export default function Contact () {
     const form = useRef();
+    const [showModal, setShowModal] = useState(false);
+    const [isSuccessful, setIsSuccessful] = useState(false);
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
-        
+
+        setShowModal(true)
         emailjs.sendForm('service_w3tl89g', 'template_urx83qo', e.target, 'f_bGvJmev2jEccZdv')
-          .then((result) => {
-            console.log(result.text);
-          }, (error) => {
-            console.log(error.text);
-          });
+            .then((result) => {
+                console.log(result.text);
+                setIsSuccessful(true);
+            }, (error) => {
+                console.log(error.text);
+                setIsSuccessful(false);
+        });
 
         e.target.reset()
     };
 
     return (
         <div className="container flex flex-col items-center">
+            {showModal &&
+                <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                    <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                    <div className="border-0 rounded-lg shadow-2xl relative flex flex-col w-full bg-white  focus:outline-none">
+                        <div className="flex flex-col gap-4 p-5 border-b border-solid border-gray-300 rounded-t ">
+                            <h3>{isSuccessful ? "Email sent" : "An error has occurred"}</h3>
+                            <button className="bg-sky-500 hover:bg-sky-700 rounded-md text-white p-1" onClick={() => setShowModal(false)}>OK</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            }
+
             <NavBar></NavBar>
             <main className="w-11/12 md:w-3/5">
                 <section className="container flex flex-col items-center space-y-4 my-4">
