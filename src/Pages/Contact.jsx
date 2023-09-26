@@ -1,8 +1,26 @@
 import React from "react";
+import { useRef } from "react";
+import emailjs from 'emailjs-com';
+import process from "process";
 
 import NavBar from '../components/NavBar'
 
 export default function Contact () {
+    const form = useRef();
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        
+        emailjs.sendForm('service_w3tl89g', 'template_urx83qo', e.target, 'f_bGvJmev2jEccZdv')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+
+        e.target.reset()
+    };
+
     return (
         <div className="container flex flex-col items-center">
             <NavBar></NavBar>
@@ -10,20 +28,24 @@ export default function Contact () {
                 <section className="container flex flex-col items-center space-y-4 my-4">
                     <div className="w-10/12 md:w-full">
                         <h1 className="text-2xl md:self-start uppercase">Contact</h1>
-                        <form action="POST" className="space-y-4 my-4">
+                        <form ref={form} onSubmit={handleOnSubmit} className="space-y-4 my-4">
                             <div>
-                                <label for="email" class="block mb-2 text-gray-900">Your email:</label>
-                                <input type="email" id="email" class="block w-full rounded-lg  p-3 shadow-sm border border-gray-300" placeholder="email@gmail.com" required />
+                                <label htmlFor="user_name" className="block mb-2 text-gray-900">Your name:</label>
+                                <input type="text" id="user_name" name="user_name" className="block w-full rounded-lg  p-3 shadow-sm border border-gray-300" placeholder="John Doe" required />
                             </div>
                             <div>
-                                <label for="subject" class="block mb-2 text-gray-900">Subject:</label>
-                                <input type="text" id="subject" class="block w-full rounded-lg p-3 shadow-sm border border-gray-300" placeholder="Subject" required />
+                                <label htmlFor="user_email" className="block mb-2 text-gray-900">Your email:</label>
+                                <input type="email" id="user_email" name="user_email" className="block w-full rounded-lg  p-3 shadow-sm border border-gray-300" placeholder="email@gmail.com" required />
                             </div>
-                            <div class="sm:col-span-2">
-                                <label for="message" class="block mb-2 text-gray-900">Your message:</label>
-                                <textarea id="message" rows="6" class="block w-full rounded-lg p-3 shadow-sm border border-gray-300" placeholder="Leave a message..."></textarea>
+                            <div>
+                                <label htmlFor="subject" className="block mb-2 text-gray-900">Subject:</label>
+                                <input type="text" id="subject" name="subject" className="block w-full rounded-lg p-3 shadow-sm border border-gray-300" placeholder="Subject" required />
                             </div>
-                            <button type="submit" class="py-3 px-5 text-center text-white rounded-lg sm:w-fit bg-sky-500">Send message</button>
+                            <div className="sm:col-span-2">
+                                <label className="block mb-2 text-gray-900">Your message:</label>
+                                <textarea id="message" name="message" rows="6" className="block w-full rounded-lg p-3 shadow-sm border border-gray-300" placeholder="Leave a message..."></textarea>
+                            </div>
+                            <button type="submit" className="py-3 px-5 text-center text-white rounded-lg sm:w-fit bg-sky-500 hover:bg-sky-700">Send message</button>
                         </form>
                     </div>
                 </section>
