@@ -8,7 +8,7 @@ export default function Hero () {
     return (
         <section className="container flex flex-col md:flex-row items-center md:justify-between gap-8 py-4 md:py-8">
             <img 
-                src="src\assets\profile.svg" 
+                src="/profile.svg" 
                 alt="Image of Celine" 
                 className="rounded-full w-64 h-64 bg-gray-300" 
             />

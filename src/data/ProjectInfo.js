@@ -3,7 +3,7 @@ export const ProjectInfo = [{
     description: "Created a fully functional Twitter clone using Django. This application allows users to create an account and a custom profile with a cover and profile picture. The site supports following/unfollowing other users, and creating, liking, retweeting, replying and deleting tweets. Users are also able to search for user and posts, as well as change their username and password. Additionally, users can explore the profile page of other users where they can view their tweets and likes, as well as their follower/following.",
     techStack: ["django", "HTML", "CSS", "JQuery", "SQLLite"],
     links: ["https://github.com/CelineTrann/twitter_clone"], 
-    img: "src/assets/projects/twitter-clone.png",
+    img: "/projects/twitter-clone.png",
     imgAlt: "Home page of the Twitter clone",
 },
 {
@@ -19,7 +19,7 @@ export const ProjectInfo = [{
     description: "Created the Netflix UI",
     techStack: ["React", "SASS", "Vite"],
     links: ["https://github.com/CelineTrann/Netflix_Clone"], 
-    img: "src/assets/projects/Netflix-clone.png",
+    img: "/projects/Netflix-clone.png",
     imgAlt: "UI of Netflix Clone",
 },
 {
@@ -35,7 +35,7 @@ export const ProjectInfo = [{
     description: "Created a smart yoga mat that is able to determine the users yoga pose correctness based on hand/feet pressure and orientation. This was done to help users correct their yoga poses when doing them alone. The system uses image processing techniques to differentiate between body parts, as well as analyze the pressure data recieved from the yoga mat sensors.",
     techStack: ["Python", "OpenCV", "Raspberry Pi", "Pressure Sensors"],
     links: ["https://github.com/CelineTrann/Workout_Watcher", ], 
-    img: "src/assets/projects/workout-watcher.png",
+    img: "/projects/workout-watcher.png",
     imgAlt: "Workout Watcher Logo",
 },
 {
@@ -67,7 +67,7 @@ export const ProjectInfo = [{
     description: "Created an interactive review of user's statistics in order to encourage users to continue to use the Ritual application for food ordering.",
     techStack: ["React", "Styled Components", "Figma"],
     links: ["https://youtu.be/YR_A_Zhllv0"], 
-    img: "src/assets/projects/Ritual-Rewind.png",
+    img: "/projects/Ritual-Rewind.png",
     imgAlt: "Starting screen of Ritual Rewind",
 },
 {
@@ -75,7 +75,7 @@ export const ProjectInfo = [{
     description: "Using a web camera and a Dragon Board, Find Space is able to detect empty parking lots and notify drivers, via a light, that a parking spot is available at that location.",
     techStack: ["Python", "Microsoft Azure Computer Vision", "Dragon Board"],
     links: ["https://github.com/tristanle22/FindSpace"], 
-    img: "src/assets/projects/Find-Space.png",
+    img: "/projects/Find-Space.png",
     imgAlt: "Find Space Logo",
 },
 ];
