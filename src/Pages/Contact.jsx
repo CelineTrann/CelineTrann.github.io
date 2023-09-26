@@ -12,16 +12,17 @@ export default function Contact () {
     const handleOnSubmit = (e) => {
         e.preventDefault();
 
-        setShowModal(true)
         emailjs.sendForm('service_w3tl89g', 'template_urx83qo', e.target, 'f_bGvJmev2jEccZdv')
             .then((result) => {
                 console.log(result.text);
                 setIsSuccessful(true);
+                setShowModal(true)
             }, (error) => {
                 console.log(error.text);
                 setIsSuccessful(false);
+                setShowModal(true)
         });
-
+        
         e.target.reset()
     };
 
