@@ -10,11 +10,13 @@ function App() {
     return (
         <div className="container flex flex-col items-center">
             <NavBar></NavBar>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <main className="w-11/12 md:w-3/5"> 
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </main>
         </div>
     )
 }

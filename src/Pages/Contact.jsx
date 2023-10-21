@@ -27,7 +27,7 @@ export default function Contact() {
     };
 
     return (
-        <main className="w-11/12 md:w-3/5">
+        <>
             {showModal &&
                 <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                     <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -65,6 +65,6 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
-        </main>
+        </>
     );
 }

@@ -10,7 +10,7 @@ export default function Projects() {
     );
 
     return (
-        <main className="w-11/12 md:w-3/5">
+        <>
             <section className="container flex flex-col items-center space-y-4 my-4">
                 <div className="w-10/12 md:w-full">
                     <h1 className="text-2xl md:self-start uppercase">Projects</h1>
@@ -19,6 +19,6 @@ export default function Projects() {
                     {projectList}
                 </div>
             </section>
-        </main>
+        </>
     );
 }
