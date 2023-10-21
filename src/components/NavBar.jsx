@@ -14,9 +14,9 @@ export default function NavBar () {
                 <FontAwesomeIcon icon={isOpen ? faXmark : faBars} size="xl" />
             </button>
             <nav className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row md:justify-end items-end md:items-center gap-4 md:gap-8 md:px-16 md:py-4 md:h-16`}>
-                <Link to={"/"} className="uppercase hover:underline">HOME</Link>
-                <Link to={"/projects"} className="uppercase hover:underline">PROJECTS</Link>
-                <Link to={'/contact'} className="uppercase hover:underline">CONTACT</Link>
+                <Link to={"/"} className="uppercase hover:underline" onClick={toggleNav}>HOME</Link>
+                <Link to={"/projects"} className="uppercase hover:underline" onClick={toggleNav}>PROJECTS</Link>
+                <Link to={'/contact'} className="uppercase hover:underline" onClick={toggleNav}>CONTACT</Link>
             </nav>
         </header>
     );
