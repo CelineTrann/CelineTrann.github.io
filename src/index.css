@@ -12,17 +12,18 @@
 
 @layer base {
     :root {
-      --text: #020203;
-      --background: #e6f1f4;
-      --primary: #3fb3d9;
-      --secondary: #d1e4eb;
-      --accent: #4890a8;
+        --text: #161718;
+        --background: #fcfdfd;
+        --primary: #3fb3d9;
+        --secondary: #e2e4e4;
+        --accent: #827a78;
     }
+
     .dark {
-      --text: #fcfcfd;
-      --background: #0b1619;
-      --primary: #2699c0;
-      --secondary: #14272e;
-      --accent: #579fb7;
+        --text: #e7e8e9;
+        --background: #020303;
+        --primary: #2699c0;
+        --secondary: #1b1d1d;
+        --accent: #877f7d;
     }
-  }  
+}
