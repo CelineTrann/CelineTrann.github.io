@@ -2,8 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@layer base {
+    :root {
+        --text: #000000;
+        --background: #f2f5f0;
+        --primary: #abbd99;
+        --secondary: #dbe3d4;
+        --accent: #748e5d;
+    }
+
+    .dark {
+        --text: #ffffff;
+        --background: #0c0f0a;
+        --primary: #546642;
+        --secondary: #232b1c;
+        --accent: #88a271;
+    }
 }

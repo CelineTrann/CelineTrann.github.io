@@ -10,7 +10,7 @@ export default function Hero () {
             <img 
                 src="/profile.svg" 
                 alt="Image of Celine" 
-                className="rounded-full w-64 h-64 bg-gray-300" 
+                className="rounded-full w-64 h-64 " 
             />
             <div className="flex flex-col justify-around w-10/12 md:w-1/3 gap-4 md:grow">
                 <h1 className="text-2xl">Hello! I'm Celine.</h1>
