@@ -24,7 +24,7 @@ export default function ProjectCard ({data}) {
     )
 
     return (
-        <div className="container rounded-md px-4 py-6 shadow-md md:flex md:flex-col">
+        <div className="container rounded-md px-4 py-6 shadow-md md:flex md:flex-col bg-secondary">
             {data.img &&
                 <div className="hidden md:block ">
                     <img src={data.img} alt={data.imgAlt} className="md:object-contain" />
