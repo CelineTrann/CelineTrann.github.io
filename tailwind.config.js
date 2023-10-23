@@ -14,6 +14,14 @@ export default {
         'secondary': 'var(--secondary)',
         'accent': 'var(--accent)',
       },
+      fontFamily: {
+        heading: 'Merriweather Sans',
+        body: 'Roboto',
+      },
+      fontWeight: {
+        normal: '400',
+        bold: '700',
+      },
     },
   },
   plugins: [],
