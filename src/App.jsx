@@ -9,7 +9,15 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
 function App() {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("null");
+
+    useEffect(() => {
+        if (window.matchMedia('prefers-color-scheme: dark').matches) {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
+    }, []);
 
     useEffect(() => {
         if (theme === "dark") {
