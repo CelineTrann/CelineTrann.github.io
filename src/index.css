@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@layer base {
+    :root {
+        --text: #161718;
+        --background: #fcfdfd;
+        --primary: #3fb3d9;
+        --secondary: #e2e4e4;
+        --accent: #827a78;
+    }
+
+    .dark {
+        --text: #e7e8e9;
+        --background: #020303;
+        --primary: #2699c0;
+        --secondary: #1b1d1d;
+        --accent: #877f7d;
+    }
 }
