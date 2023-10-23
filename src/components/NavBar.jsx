@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function NavBar () {
+export default function NavBar ({handleTheme}) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleNav = () => setIsOpen(prevState => !prevState);
 
@@ -17,6 +17,10 @@ export default function NavBar () {
                 <Link to={"/"} className="uppercase hover:underline" onClick={toggleNav}>HOME</Link>
                 <Link to={"/projects"} className="uppercase hover:underline" onClick={toggleNav}>PROJECTS</Link>
                 <Link to={'/contact'} className="uppercase hover:underline" onClick={toggleNav}>CONTACT</Link>
+                <button onClick={handleTheme}>
+                    <FontAwesomeIcon icon={faSun} size="xl" className="align-middle hover:text-blue-500"/>
+                </button>
+                
             </nav>
         </header>
     );

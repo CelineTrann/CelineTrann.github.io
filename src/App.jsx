@@ -1,6 +1,7 @@
 import React from 'react'
-
 import { Routes, Route } from "react-router-dom"
+import { useState, useEffect } from 'react'
+
 import Home from './pages/Home'
 import Contact from "./pages/Contact"
 import Projects from "./pages/Projects"
@@ -8,9 +9,24 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
 function App() {
+    const [theme, setTheme] = useState("dark");
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    }, [theme]);
+
+    const handleThemeSwitch = () => {
+        setTheme((prevTheme) => prevTheme === "dark" ? "light" : "dark");
+        console.log(theme);
+    };
+
     return (
         <div className="container flex flex-col items-center">
-            <NavBar></NavBar>
+            <NavBar handleTheme={handleThemeSwitch}></NavBar>
             <main className="w-11/12 md:w-3/5"> 
                 <Routes>
                     <Route path="/" element={<Home />} />
