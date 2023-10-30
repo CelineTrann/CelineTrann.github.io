@@ -1,5 +1,7 @@
 import React from "react";
 
+import Resume from '../assets/Resume.pdf'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
@@ -24,7 +26,7 @@ export default function Hero () {
                     <a href="https://www.linkedin.com/in/celine-tran-38401b177/" target="_blank" id="linkedin" className="hover:scale-125 ease-in-out duration-300">
                         <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                     </a>
-                    <a href="src\assets\Resume.pdf" target="_blank" id="resume" className="hover:scale-125 ease-in-out duration-300">
+                    <a href={Resume} target="_blank" id="resume" className="hover:scale-125 ease-in-out duration-300">
                         <FontAwesomeIcon icon={faFile} size="2xl" />
                     </a>
                 </div>
