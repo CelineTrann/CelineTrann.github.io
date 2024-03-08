@@ -17,7 +17,7 @@ export default function Hero () {
             <div className="flex flex-col justify-around w-10/12 md:w-1/3 gap-4 md:grow">
                 <h1 className="text-2xl">Hello! I'm Celine.</h1>
                 <p>I’m a recent engineering graduate of the University of Waterloo. I have experiene in backend web development and test automation. I am currently seeking a <b>full time software developer position.</b></p>
-                <p>Feel free to reach out at cyptran@uwaterloo.ca!</p>
+                <p>Feel free to reach out at cyptran14@gmail.com!</p>
 
                 <div id="icon-container" className="flex flex-row items-center gap-4 my-4">
                     <a href="https://github.com/CelineTrann" target="_blank" id="github" className="hover:scale-125 ease-in-out duration-300">
