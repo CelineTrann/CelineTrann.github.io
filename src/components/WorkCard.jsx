@@ -9,7 +9,7 @@ export default function WorkCard ({data}) {
     const imgAlt = () => data.company + ' Logo';
     
     return (
-        <div className="container rounded-md flex flex-row justify-around items-start gap-4 px-4 py-6 shadow-md bg-secondary">
+        <div className="w-full rounded-md flex flex-row justify-around items-start gap-4 px-4 py-6 shadow-md bg-secondary">
             <img 
                 src={data.img}
                 alt={imgAlt()}

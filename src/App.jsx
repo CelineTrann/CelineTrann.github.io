@@ -33,7 +33,7 @@ function App() {
     };
 
     return (
-        <div className="container min-h-screen flex flex-col items-center bg-background text-text">
+        <div className="w-full min-h-screen flex flex-col items-center bg-background text-text">
             <NavBar theme={theme} handleTheme={handleThemeSwitch}></NavBar>
             <main className="w-11/12 md:w-3/5"> 
                 <Routes>

@@ -9,7 +9,7 @@ export default function WorkExperience () {
     )
 
     return (
-        <section className="container flex flex-col items-center space-y-4 my-4">
+        <section className="w-full flex flex-col items-center space-y-4 my-4">
             <div className="w-10/12 md:w-full">
                 <h1 className="text-2xl md:self-start">WORK EXPERIENCE</h1>
             </div>

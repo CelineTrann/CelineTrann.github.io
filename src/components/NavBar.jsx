@@ -9,7 +9,7 @@ export default function NavBar ({theme, handleTheme}) {
     const toggleNav = () => setIsOpen(prevState => !prevState);
 
     return (
-        <header className={`container flex flex-col md:flex-row md:justify-end items-end md:items-center py-4 px-4 gap-4 fixed md:static top-0 right-0 ${isOpen ? "bg-background" : ""}`}>
+        <header className={`w-full flex flex-col md:flex-row md:justify-end items-end md:items-center py-4 px-4 gap-4 fixed md:static top-0 right-0 ${isOpen ? "bg-background" : ""}`}>
             <button className="md:hidden" onClick={toggleNav}>
                 <FontAwesomeIcon icon={isOpen ? faXmark : faBars} size="xl" />
             </button>

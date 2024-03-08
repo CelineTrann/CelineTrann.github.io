@@ -8,7 +8,7 @@ import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 export default function Hero () {
     return (
-        <section className="container flex flex-col md:flex-row items-center md:justify-between gap-8 py-4 md:py-8">
+        <section className="w-full flex flex-col md:flex-row items-center md:justify-between gap-8 py-4 md:py-8">
             <img 
                 src="/profile.svg" 
                 alt="Image of Celine" 
